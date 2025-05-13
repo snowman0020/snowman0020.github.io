@@ -7,54 +7,65 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #333333;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
       margin: 0;
       padding: 0;
+      color: #333;
     }
 
     .container {
       max-width: 900px;
-      margin: 40px auto;
+      margin: 50px auto;
       background-color: #ffffff;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
 
-    h1, h2 {
+    h1 {
       color: #2c3e50;
+      font-size: 2.2em;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
     }
 
-    .section {
-      margin-bottom: 30px;
+    h2 {
+      color: #34495e;
+      font-size: 1.5em;
+      margin-top: 30px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
     }
 
     ul {
       padding-left: 20px;
+      margin-top: 5px;
     }
 
     .title {
       font-weight: bold;
-      color: #000000;
+      margin-top: 15px;
+      color: #000;
     }
 
     .subtitle {
-      color: #666666;
+      color: #666;
       font-style: italic;
       font-size: 0.95rem;
+      margin-bottom: 10px;
     }
 
     .info {
-      font-size: 0.9rem;
-      color: #444444;
+      font-size: 0.95rem;
+      color: #555;
+      margin-top: -10px;
     }
 
     .download-button {
       display: inline-block;
       padding: 12px 20px;
-      margin-top: 20px;
-      background-color: #007bff;
+      margin-top: 30px;
+      background-color: #3498db;
       color: white;
       text-decoration: none;
       border-radius: 6px;
@@ -63,7 +74,7 @@
     }
 
     .download-button:hover {
-      background-color: #0056b3;
+      background-color: #2c80b4;
     }
   </style>
 </head>
@@ -72,35 +83,58 @@
     <h1>Peerakit Aumsa-ard</h1>
     <p class="info">Bang Kapi, BKK • 089-601-0020 • npeerakit@gmail.com</p>
 
-    <div class="section">
-      <h2>Professional Summary</h2>
-      <p>
-        Highly skilled and motivated programmer with expertise in software development, problem-solving,
-        and innovative thinking. Strong foundation in multiple programming languages and frameworks.
-        Committed to continuous learning and delivering efficient software solutions.
-      </p>
-    </div>
+    <h2>Professional Summary</h2>
+    <p>
+      Highly skilled and motivated programmer with expertise in software development, problem-solving,
+      and innovative thinking. Strong foundation in multiple programming languages and frameworks.
+      Committed to continuous learning and delivering efficient software solutions.
+    </p>
 
-    <div class="section">
-      <h2>Work Experience</h2>
-      <!-- (Work experience details here as before) -->
-    </div>
+    <h2>Work Experience</h2>
+    <p class="title">Senior Backend Developer – Rayong Engineering & Plant Service Co., Ltd. (SCG)</p>
+    <p class="subtitle">Jan 2023 – Present</p>
+    <ul>
+      <li>Developed RESTful APIs using .NET 8</li>
+      <li>Configured AWS for hosting APIs</li>
+      <li>Implemented SAP/email integrations</li>
+      <li>Used SQL Server, MongoDB, AWS OpenSearch</li>
+      <li>Built CI/CD pipelines, Redis caching</li>
+      <li>Used GitLab, spearheaded PR/PO system</li>
+    </ul>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p>Siam University | B.B.A. in Computer Business | GPA 2.6</p>
-    </div>
+    <p class="title">Senior Backend Developer – Buzzebees</p>
+    <p class="subtitle">Aug 2023 – Dec 2023</p>
+    <ul>
+      <li>Built Azure Blob Storage-based scalable solutions</li>
+      <li>Created secure RESTful APIs</li>
+      <li>Integrated with external applications</li>
+    </ul>
 
-    <div class="section">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>.NET (4.5 – 8), MVC, Web API</li>
-        <li>SQL Server, MongoDB, OpenSearch</li>
-        <li>CI/CD, GitLab, Azure DevOps</li>
-        <li>Redis, Azure Blob, AWS S3</li>
-        <li>Unit of Work, OOP, Scrum (Jira)</li>
-      </ul>
-    </div>
+    <p class="title">Full Stack Developer – KCG Corporation</p>
+    <p class="subtitle">Nov 2021 – Aug 2023</p>
+    <ul>
+      <li>Maintained web apps in .NET MVC 4.8</li>
+      <li>Worked with EF6, SQL Server</li>
+      <li>Built responsive UIs with HTML, CSS, JS</li>
+    </ul>
+
+    <p class="title">Junior Developer – Asiasoft</p>
+    <p class="subtitle">Jan 2017 – Nov 2019</p>
+    <ul>
+      <li>Handled ASP.NET SPA with SQL Server procedures</li>
+    </ul>
+
+    <h2>Education</h2>
+    <p>Siam University | B.B.A. in Computer Business | GPA 2.6</p>
+
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>.NET (4.5 – 8), MVC, Web API</li>
+      <li>SQL Server, MongoDB, OpenSearch</li>
+      <li>CI/CD, GitLab, Azure DevOps</li>
+      <li>Redis, Azure Blob, AWS S3</li>
+      <li>Unit of Work, OOP, Scrum (Jira)</li>
+    </ul>
 
     <a
       class="download-button"

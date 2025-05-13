@@ -1,195 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Peerakit Aumsa-ard - Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
-      padding: 2rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      margin: 0;
+      padding: 0;
     }
+
     .container {
       max-width: 900px;
-      margin: auto;
-      background: #fff;
-      padding: 2rem;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-radius: 10px;
     }
-    h1, h2, h3 {
+
+    h1, h2 {
       color: #2c3e50;
     }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+
+    .section {
+      margin-bottom: 30px;
     }
-    .contact {
-      font-size: 0.95rem;
-      color: #666;
-      margin-bottom: 0.5rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
+
     ul {
-      padding-left: 1.2rem;
+      padding-left: 20px;
     }
-    .skills span {
-      display: inline-block;
-      background: #e0f7fa;
-      color: #00796b;
-      padding: 0.3rem 0.6rem;
-      margin: 0.3rem;
-      border-radius: 4px;
+
+    .title {
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .subtitle {
+      color: #666666;
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+
+    .info {
       font-size: 0.9rem;
-    }
-    .timeline {
-      position: relative;
-      margin-left: 1rem;
-      padding-left: 2rem;
-      border-left: 3px solid #00796b;
-    }
-    .timeline-item {
-      position: relative;
-      margin-bottom: 2rem;
-    }
-    .timeline-dot {
-      position: absolute;
-      left: -11px;
-      top: 5px;
-      width: 16px;
-      height: 16px;
-      background-color: #00796b;
-      border-radius: 50%;
-      border: 2px solid #fff;
-      box-shadow: 0 0 0 2px #00796b;
-    }
-    .timeline-content {
-      background: #f9f9f9;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    .timeline-content h3 {
-      margin-top: 0;
-      color: #2c3e50;
-    }
-    .timeline-date {
-      font-size: 0.9rem;
-      color: #888;
-    }
-    .download-btn {
-      display: inline-block;
-      background-color: #00796b;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 500;
-      margin: 1rem 0;
+      color: #444444;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Peerakit Aumsa-ard</h1>
-    <div class="contact">
-      Bang Kapi, BKK • 089-601-0020 • npeerakit@gmail.com
-    </div>
-    <a class="download-btn" href="https://drive.google.com/file/d/1nxY6QSDynl8r3Dmjc2gpGge_nOmFX4Yu/view?usp=sharing" target="_blank">📄 Download Resume (PDF)</a>
+    <p class="info">Bang Kapi, BKK • 089-601-0020 • npeerakit@gmail.com</p>
 
-    <section>
+    <div class="section">
       <h2>Professional Summary</h2>
-      <p>Results-driven software engineer with 7+ years of experience in backend development, system integration, and cloud technologies. Proven ability to design scalable architectures, optimize performance, and deliver high-quality software in fast-paced Agile environments. Passionate about clean code, and continuous learning.</p>
-    </section>
+      <p>
+        Highly skilled and motivated programmer with expertise in software development, problem-solving,
+        and innovative thinking. Strong foundation in multiple programming languages and frameworks.
+        Committed to continuous learning and delivering efficient software solutions.
+      </p>
+    </div>
 
-    <section>
+    <div class="section">
       <h2>Work Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Senior Backend Developer</h3>
-            <span class="timeline-date">Jan 2023 – Present</span>
-            <p><strong>Rayong Engineering & Plant Service Co., Ltd. (SCG)</strong></p>
-            <ul>
-              <li>Led backend development of enterprise applications using .NET 8 and EF Core</li>
-              <li>Integrated SAP systems and optimized performance with Redis caching</li>
-              <li>Streamlined deployment through CI/CD pipelines and Docker-based environments</li>
-              <li>Managed AWS services, including S3, Lambda, and OpenSearch</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Senior Backend Developer</h3>
-            <span class="timeline-date">Aug 2023 – Dec 2023</span>
-            <p><strong>Buzzebees</strong></p>
-            <ul>
-              <li>Developed secure file storage APIs using Azure Blob Storage</li>
-              <li>Implemented permission control systems to enhance user data security</li>
-              <li>Collaborated in cross-functional teams using Agile and GitLab pipelines</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Full Stack Developer</h3>
-            <span class="timeline-date">Nov 2021 – Aug 2023</span>
-            <p><strong>KCG Corporation</strong></p>
-            <ul>
-              <li>Created and maintained .NET MVC 4.8 applications with SQL Server backend</li>
-              <li>Improved UI/UX using HTML, CSS, and vanilla JavaScript</li>
-              <li>Designed reporting modules and integrated barcode scanning systems</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Junior Developer</h3>
-            <span class="timeline-date">Jan 2017 – Nov 2019</span>
-            <p><strong>Asiasoft</strong></p>
-            <ul>
-              <li>Assisted in building internal tools using ASP.NET and SPA frameworks</li>
-              <li>Maintained SQL Server databases and automated recurring reports</li>
-              <li>Contributed to legacy system upgrades and code refactoring</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section>
+      <p class="title">Senior Backend Developer – Rayong Engineering & Plant Service Co., Ltd. (SCG)</p>
+      <p class="subtitle">Jan 2023 – Present</p>
+      <ul>
+        <li>Developed RESTful APIs using .NET 8</li>
+        <li>Configured AWS for hosting APIs</li>
+        <li>Implemented SAP/email integrations</li>
+        <li>Used SQL Server, MongoDB, AWS OpenSearch</li>
+        <li>Built CI/CD pipelines, Redis caching</li>
+        <li>Used GitLab, spearheaded PR/PO system</li>
+      </ul>
+
+      <p class="title">Senior Backend Developer – Buzzebees</p>
+      <p class="subtitle">Aug 2023 – Dec 2023</p>
+      <ul>
+        <li>Built Azure Blob Storage-based scalable solutions</li>
+        <li>Created secure RESTful APIs</li>
+        <li>Integrated with external applications</li>
+      </ul>
+
+      <p class="title">Full Stack Developer – KCG Corporation</p>
+      <p class="subtitle">Nov 2021 – Aug 2023</p>
+      <ul>
+        <li>Maintained web apps in .NET MVC 4.8</li>
+        <li>Worked with EF6, SQL Server</li>
+        <li>Built responsive UIs with HTML, CSS, JS</li>
+      </ul>
+
+      <p class="title">Junior Developer – Asiasoft</p>
+      <p class="subtitle">Jan 2017 – Nov 2019</p>
+      <ul>
+        <li>Handled ASP.NET SPA with SQL Server procedures</li>
+      </ul>
+    </div>
+
+    <div class="section">
       <h2>Education</h2>
-      <p><strong>Siam University</strong> — B.B.A. in Computer Business (GPA 2.6)</p>
-    </section>
+      <p>Siam University | B.B.A. in Computer Business | GPA 2.6</p>
+    </div>
 
-    <section>
+    <div class="section">
       <h2>Technical Skills</h2>
-      <div class="skills">
-        <span>.NET 6 / 8</span>
-        <span>MVC .NET 4.5 – 4.8</span>
-        <span>Web API / RESTful</span>
-        <span>SQL Server / MongoDB</span>
-        <span>EF 6 / LINQ</span>
-        <span>Azure Blob Storage</span>
-        <span>AWS (S3, OpenSearch)</span>
-        <span>Redis</span>
-        <span>Git / GitLab / Azure DevOps</span>
-        <span>CI/CD</span>
-        <span>HTML / CSS / JavaScript</span>
-        <span>Agile / Scrum / Jira</span>
-        <span>OOP / Unit of Work</span>
-      </div>
-    </section>
+      <ul>
+        <li>.NET (4.5 – 8), MVC, Web API</li>
+        <li>SQL Server, MongoDB, OpenSearch</li>
+        <li>CI/CD, GitLab, Azure DevOps</li>
+        <li>Redis, Azure Blob, AWS S3</li>
+        <li>Unit of Work, OOP, Scrum (Jira)</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>

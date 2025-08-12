@@ -5,35 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Peerakit Aumsa-ard — Resume</title>
   <style>
-    :root{
-      --bg:#0b0d10; --card:#12161b; --muted:#9aa4b2; --text:#e8edf2; --accent:#5cc3ff; --border:#1e2630;
-    }
+    :root{ --bg:#0b0d10; --card:#12161b; --muted:#9aa4b2; --text:#e8edf2; --accent:#5cc3ff; --border:#1e2630; }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{margin:0; font:16px/1.6 ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:var(--text); background:linear-gradient(180deg,#0b0d10,#0e1116 40%,#0b0d10)}
-    .container{max-width:900px; margin:40px auto; padding:24px}
-    .card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:32px; box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    body{ margin:0; font:16px/1.6 ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:var(--text); background:linear-gradient(180deg,#0b0d10,#0e1116 40%,#0b0d10); }
+    .container{ max-width:900px; margin:40px auto; padding:24px; }
+    .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:32px; box-shadow:0 10px 30px rgba(0,0,0,.35); }
 
     /* Header */
-    header.name{display:flex; flex-direction:column; align-items:center; text-align:center; gap:6px}
-    header.name h1{margin:0; font-size:34px; letter-spacing:.4px}
-    .subline{color:var(--muted)}
-    .contactline{color:var(--muted)}
-    .contactline a{color:var(--text); text-decoration:none; border-bottom:1px dashed rgba(92,195,255,.5)}
-    .role{margin-top:6px; display:inline-block; padding:.22rem .7rem; border:1px solid var(--border); border-radius:999px; color:#cfe8ff; font-weight:600; letter-spacing:.2px}
+    header.name{ display:flex; flex-direction:column; align-items:center; text-align:center; gap:6px; }
+    header.name h1{ margin:0; font-size:34px; letter-spacing:.4px }
+    .subline{ color:var(--muted) }
+    .contactline{ color:var(--muted) }
+    .contactline a{ color:var(--text); text-decoration:none; border-bottom:1px dashed rgba(92,195,255,.5) }
+    .role{ margin-top:6px; display:inline-block; padding:.22rem .7rem; border:1px solid var(--border); border-radius:999px; color:#cfe8ff; font-weight:600; letter-spacing:.2px }
+    .download{ margin-top:12px; text-align:center; }
+    .download a{ display:inline-block; padding:8px 16px; background:var(--accent); color:#081018; text-decoration:none; border-radius:8px; font-weight:700 }
+    .download a:hover{ filter:brightness(1.1) }
 
     /* Sections */
-    section{margin:28px 0}
-    h2{margin:0 0 10px; font-size:18px; letter-spacing:.6px; text-transform:uppercase; color:var(--accent)}
-    .rule{height:1px; background:linear-gradient(90deg,transparent,var(--border),transparent); margin:10px 0 18px}
-    ul{margin:8px 0 0 18px}
-    li{margin:6px 0}
+    section{ margin:28px 0 }
+    h2{ margin:0 0 10px; font-size:18px; letter-spacing:.6px; text-transform:uppercase; color:var(--accent) }
+    .rule{ height:1px; background:linear-gradient(90deg,transparent,var(--border),transparent); margin:10px 0 18px }
+    p{ margin:0 0 10px }
 
-    .skills{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px}
-    .pill{background:#0f1318; border:1px solid var(--border); padding:12px 14px; border-radius:12px}
-    .pill b{display:block; margin-bottom:6px; color:#cfe8ff}
+    /* Experience */
+    .role-block{ margin:0 0 18px }
+    .title{ font-weight:700 }
+    .meta{ color:var(--muted) }
+    ul{ margin:8px 0 0 18px }
+    li{ margin:6px 0 }
 
-    @media print{body{background:#fff}.container{margin:0;padding:0}.card{box-shadow:none;border-color:#ddd}.contactline a{border:0}}
+    /* Skills grid */
+    .skills{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px }
+    .pill{ background:#0f1318; border:1px solid var(--border); padding:12px 14px; border-radius:12px }
+    .pill b{ display:block; margin-bottom:6px; color:#cfe8ff }
+
+    /* Print */
+    @media print{ body{background:#fff} .container{margin:0;padding:0} .card{box-shadow:none;border-color:#ddd} .contactline a{border:0} }
   </style>
 </head>
 <body>
@@ -55,8 +64,9 @@
       <section>
         <h2>Work Experience</h2>
         <div class="rule"></div>
+
         <div class="role-block">
-          <div class="title"><strong>Backend Developer — Repco (Onsite SCG Bangsue)</strong> <span class="meta">| Jan 2024 – Present</span></div>
+          <div class="title">Backend Developer — Repco (Onsite SCG Bangsue) <span class="meta">| Jan 2024 – Present</span></div>
           <ul>
             <li>Developed RESTful APIs using C# .NET 8 for scalable web service architecture.</li>
             <li>Managed AWS services for hosting and deployment, enhancing performance and reliability.</li>
@@ -68,16 +78,18 @@
             <li>Led the development of Purchase Request and Purchase Order systems, boosting procurement efficiency.</li>
           </ul>
         </div>
+
         <div class="role-block">
-          <div class="title"><strong>Senior Backend Developer — Buzzebees</strong> <span class="meta">| Feb 2022 – Dec 2023</span></div>
+          <div class="title">Senior Backend Developer — Buzzebees <span class="meta">| Feb 2022 – Dec 2023</span></div>
           <ul>
             <li>Created scalable solutions using Azure Blob Storage for large dataset management.</li>
             <li>Developed secure RESTful APIs for managing access permissions.</li>
             <li>Integrated Azure Blob Storage into multiple applications, optimizing performance.</li>
           </ul>
         </div>
+
         <div class="role-block">
-          <div class="title"><strong>Full Stack Developer — KCG Corporation</strong> <span class="meta">| Feb 2020 – Jan 2022</span></div>
+          <div class="title">Full Stack Developer — KCG Corporation <span class="meta">| Feb 2020 – Jan 2022</span></div>
           <ul>
             <li>Developed and maintained web applications using C# .NET MVC 4.8 and EF6.</li>
             <li>Collaborated with designers and PMs to define requirements and scope.</li>
@@ -86,8 +98,9 @@
             <li>Implemented business logic and algorithms for high‑performance applications.</li>
           </ul>
         </div>
+
         <div class="role-block">
-          <div class="title"><strong>Full Stack Developer — Asiasoft</strong> <span class="meta">| Jan 2017 – Jan 2020</span></div>
+          <div class="title">Full Stack Developer — Asiasoft <span class="meta">| Jan 2017 – Jan 2020</span></div>
           <ul>
             <li>Developed and maintained web applications using ASP.NET Framework 4–4.8.</li>
             <li>Designed and consumed SOAP/WSDL services for third‑party system integration.</li>
@@ -116,6 +129,10 @@
           <div class="pill"><b>Methodologies</b>Agile/Scrum (Scrum Master experience), Jira</div>
         </div>
       </section>
+
+      <div class="download">
+        <a href="https://drive.google.com/file/d/1nfgFfTTR_7WbsZPV4bUaMuWsrA-oUJ2Y/view?usp=sharing" target="_blank">📄 Download Resume (PDF)</a>
+      </div>
 
     </div>
   </div>

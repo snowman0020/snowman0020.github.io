@@ -1,185 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Peerakit Aumsa-ard - Resume</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peerakit Aumsa-ard — Resume</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f4f8;
-      margin: 0;
-      padding: 0;
-      color: #333;
+    :root{
+      --bg:#0b0d10; --card:#12161b; --muted:#9aa4b2; --text:#e8edf2; --accent:#5cc3ff; --border:#1e2630;
     }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font:16px/1.6 ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:var(--text); background:linear-gradient(180deg,#0b0d10,#0e1116 40%,#0b0d10)}
+    .container{max-width:900px; margin:40px auto; padding:24px}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:32px; box-shadow:0 10px 30px rgba(0,0,0,.35)}
 
-    .container {
-      max-width: 960px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-    }
+    /* Header */
+    header.name{display:flex; flex-direction:column; align-items:center; text-align:center; gap:6px}
+    header.name h1{margin:0; font-size:34px; letter-spacing:.4px}
+    .subline{color:var(--muted)}
+    .contactline{color:var(--muted)}
+    .contactline a{color:var(--text); text-decoration:none; border-bottom:1px dashed rgba(92,195,255,.5)}
+    .role{margin-top:6px; display:inline-block; padding:.22rem .7rem; border:1px solid var(--border); border-radius:999px; color:#cfe8ff; font-weight:600; letter-spacing:.2px}
 
-    .header {
-      background: #2c3e50;
-      color: white;
-      padding: 40px;
-      text-align: center;
-    }
+    /* Sections */
+    section{margin:28px 0}
+    h2{margin:0 0 10px; font-size:18px; letter-spacing:.6px; text-transform:uppercase; color:var(--accent)}
+    .rule{height:1px; background:linear-gradient(90deg,transparent,var(--border),transparent); margin:10px 0 18px}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
 
-    .header h1 {
-      margin: 0 0 10px;
-      font-size: 2.5rem;
-    }
+    .skills{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px}
+    .pill{background:#0f1318; border:1px solid var(--border); padding:12px 14px; border-radius:12px}
+    .pill b{display:block; margin-bottom:6px; color:#cfe8ff}
 
-    .header p {
-      margin: 0;
-      font-size: 1rem;
-      color: #d6e2f0;
-    }
-
-    .section {
-      padding: 30px 40px;
-      border-bottom: 1px solid #e0e0e0;
-    }
-
-    .section:last-child {
-      border-bottom: none;
-    }
-
-    h2 {
-      margin-top: 0;
-      font-size: 1.5rem;
-      color: #2c3e50;
-    }
-
-    .job-title {
-      font-weight: bold;
-      margin-top: 20px;
-      color: #000;
-    }
-
-    .job-subtitle {
-      font-style: italic;
-      color: #666;
-      font-size: 0.95rem;
-    }
-
-    ul {
-      margin: 10px 0 0 20px;
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    .skills-grid li {
-      list-style-type: '✔';
-      padding-left: 10px;
-    }
-
-    .download-button {
-      display: block;
-      width: max-content;
-      margin: 30px auto;
-      padding: 12px 24px;
-      background-color: #2980b9;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .download-button:hover {
-      background-color: #1c5d85;
-    }
+    @media print{body{background:#fff}.container{margin:0;padding:0}.card{box-shadow:none;border-color:#ddd}.contactline a{border:0}}
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <h1>Peerakit Aumsa-ard</h1>
-      <p>Bang Kapi, BKK • 089-601-0020 • npeerakit@gmail.com</p>
+    <div class="card">
+      <header class="name">
+        <h1>PEERAKIT AUMSA-ARD</h1>
+        <div class="subline">Bang Kapi, Bangkok</div>
+        <div class="contactline"><a href="tel:+66896010020">089-601-0020</a> • <a href="mailto:npeerakit@gmail.com">npeerakit@gmail.com</a></div>
+        <div class="role">Backend / Full‑stack Developer</div>
+      </header>
+
+      <section>
+        <h2>Professional Summary</h2>
+        <div class="rule"></div>
+        <p>Adaptable and results‑driven programmer with strong expertise in backend and full‑stack development. Skilled in building scalable architectures, integrating complex systems, and optimizing application performance. Known for collaborative teamwork, problem‑solving abilities, and a dedication to delivering high‑quality solutions aligned with business and user needs. Passionate about learning emerging technologies and applying best practices to create efficient, reliable, and maintainable software.</p>
+      </section>
+
+      <section>
+        <h2>Work Experience</h2>
+        <div class="rule"></div>
+        <div class="role-block">
+          <div class="title"><strong>Backend Developer — Repco (Onsite SCG Bangsue)</strong> <span class="meta">| Jan 2024 – Present</span></div>
+          <ul>
+            <li>Developed RESTful APIs using C# .NET 8 for scalable web service architecture.</li>
+            <li>Managed AWS services for hosting and deployment, enhancing performance and reliability.</li>
+            <li>Designed and implemented email and SAP integrations to streamline business operations.</li>
+            <li>Integrated third‑party APIs with internal APIs for SCG, optimizing data exchange.</li>
+            <li>Implemented SQL Server, MongoDB, and AWS OpenSearch solutions for robust data management.</li>
+            <li>Built CI/CD pipelines to automate deployments, improving delivery speed and consistency.</li>
+            <li>Established Redis caching to enhance application performance.</li>
+            <li>Led the development of Purchase Request and Purchase Order systems, boosting procurement efficiency.</li>
+          </ul>
+        </div>
+        <div class="role-block">
+          <div class="title"><strong>Senior Backend Developer — Buzzebees</strong> <span class="meta">| Feb 2022 – Dec 2023</span></div>
+          <ul>
+            <li>Created scalable solutions using Azure Blob Storage for large dataset management.</li>
+            <li>Developed secure RESTful APIs for managing access permissions.</li>
+            <li>Integrated Azure Blob Storage into multiple applications, optimizing performance.</li>
+          </ul>
+        </div>
+        <div class="role-block">
+          <div class="title"><strong>Full Stack Developer — KCG Corporation</strong> <span class="meta">| Feb 2020 – Jan 2022</span></div>
+          <ul>
+            <li>Developed and maintained web applications using C# .NET MVC 4.8 and EF6.</li>
+            <li>Collaborated with designers and PMs to define requirements and scope.</li>
+            <li>Built responsive UIs with HTML, CSS, JavaScript.</li>
+            <li>Designed SQL Server schemas for efficient storage and retrieval.</li>
+            <li>Implemented business logic and algorithms for high‑performance applications.</li>
+          </ul>
+        </div>
+        <div class="role-block">
+          <div class="title"><strong>Full Stack Developer — Asiasoft</strong> <span class="meta">| Jan 2017 – Jan 2020</span></div>
+          <ul>
+            <li>Developed and maintained web applications using ASP.NET Framework 4–4.8.</li>
+            <li>Designed and consumed SOAP/WSDL services for third‑party system integration.</li>
+            <li>Wrote and optimized T‑SQL stored procedures for efficient data processing.</li>
+            <li>Built responsive interfaces using AJAX, jQuery, CSS, Bootstrap 3–4.</li>
+            <li>Supported backend data operations for Single Page Web Services.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="rule"></div>
+        <p>Siam University — B.B.A. in Computer Business, GPA: 2.6 (2012 – 2016)</p>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <div class="rule"></div>
+        <div class="skills">
+          <div class="pill"><b>Languages & Frameworks</b>C#, .NET Core (6/8), ASP.NET MVC (4.5–4.8), Entity Framework (6)</div>
+          <div class="pill"><b>Web & API</b>RESTful API, Web Services, HTML, CSS, JavaScript</div>
+          <div class="pill"><b>Databases</b>SQL Server (Migration & Management), MongoDB, AWS OpenSearch</div>
+          <div class="pill"><b>Cloud & DevOps</b>AWS (EC2, S3, OpenSearch), Azure Blob Storage, CI/CD (GitLab, Azure DevOps)</div>
+          <div class="pill"><b>Tools</b>Redis, Git, SourceTree, Azure DevOps</div>
+          <div class="pill"><b>Methodologies</b>Agile/Scrum (Scrum Master experience), Jira</div>
+        </div>
+      </section>
+
     </div>
-
-    <div class="section">
-      <h2>Professional Summary</h2>
-      <p>
-        Highly skilled backend developer with strong expertise in .NET (up to .NET 8), Clean Architecture,
-        and real-time systems using SignalR. Experienced in designing scalable APIs, background services with
-        .NET Hosted Workers, and delivering cloud-native solutions on AWS and Azure.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Work Experience</h2>
-
-      <p class="job-title">Senior Backend Developer – Rayong Engineering & Plant Service Co., Ltd. (SCG)</p>
-      <p class="job-subtitle">Jan 2023 – Present</p>
-      <ul>
-        <li>Developed RESTful APIs using .NET 8 with Clean Architecture</li>
-        <li>Implemented SignalR for real-time communication</li>
-        <li>Built background services using Hosted Worker</li>
-        <li>Used AWS (S3, Lambda, OpenSearch), Redis, GitLab CI/CD</li>
-        <li>Led backend for PR/PO system</li>
-      </ul>
-
-      <p class="job-title">Senior Backend Developer – Buzzebees</p>
-      <p class="job-subtitle">Aug 2023 – Dec 2023</p>
-      <ul>
-        <li>Built Azure Blob-based scalable APIs</li>
-        <li>Integrated secure systems with external APIs</li>
-      </ul>
-
-      <p class="job-title">Full Stack Developer – KCG Corporation</p>
-      <p class="job-subtitle">Nov 2021 – Aug 2023</p>
-      <ul>
-        <li>Maintained .NET MVC 4.8 apps, EF6, SQL Server</li>
-        <li>Developed responsive UIs (HTML, CSS, JS)</li>
-      </ul>
-
-      <p class="job-title">Junior Developer – Asiasoft</p>
-      <p class="job-subtitle">Jan 2017 – Nov 2019</p>
-      <ul>
-        <li>Maintained ASP.NET SPA with SQL Server</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Education</h2>
-      <p>Siam University | B.B.A. in Computer Business | GPA 2.6</p>
-    </div>
-
-    <div class="section">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <ul>
-          <li>.NET 4.5 – 8, ASP.NET Core, MVC, Web API</li>
-          <li>SignalR, Hosted Worker, Clean Architecture</li>
-          <li>SQL Server, MongoDB, AWS OpenSearch</li>
-        </ul>
-        <ul>
-          <li>CI/CD, GitLab, Azure DevOps, Docker</li>
-          <li>Redis, Azure Blob, AWS S3</li>
-          <li>OOP, Unit of Work, Agile/Scrum</li>
-        </ul>
-      </div>
-    </div>
-
-    <a
-      class="download-button"
-      href="https://drive.usercontent.google.com/u/0/uc?id=1nxY6QSDynl8r3Dmjc2gpGge_nOmFX4Yu&export=download"
-      target="_blank"
-      download
-    >
-      📥 Download PDF Resume
-    </a>
   </div>
 </body>
 </html>
